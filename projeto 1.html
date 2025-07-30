@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Maria Vitória</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5fdf6;
+      color: #444;
+      line-height: 1.6;
+    }
+    header {
+      background-image: linear-gradient(rgba(229, 252, 229, 0.911), rgba(229, 252, 229, 0.295)), url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXxlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      color: #2f4f2f;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #92c39d;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: #6ba77b;
+      border-bottom: 2px solid #6ba77b;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #4c9a6a;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #2f7b4f;
+    }
+    .skills, .carousel-track {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .personal-info {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .personal-info img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #6ba77b;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    .project-card, .certification-card {
+      background: #e7f7eb;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 280px;
+      height: 220px;
+      flex: 0 0 auto;
+    }
+    .project-card:hover, .certification-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .project-card h3, .certification-card h3 {
+      color: #3a7552;
+      margin-bottom: 0.5rem;
+    }
+    .project-card p, .certification-card p {
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .carousel-container {
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-indicators {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .carousel-indicators button {
+      background-color: #c2e5cf;
+      border: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .carousel-indicators button.active {
+      background-color: #4d9761;
+    }
+
+    .titulo-animado {
+  animation: moverCimaBaixo 2s ease-in-out infinite alternate;
+  display: inline-block;
+}
+
+@keyframes moverCimaBaixo {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+.personal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.1rem;
+  background: #e9f5ef;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+}
+
+.contact-info a {
+  color: #3b7c5c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #2e5a3e;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maria Vitória</h1>
+<h3 class="titulo-animado">Designer UI/UX e Desenvolvedora front end</h3>
+  </header>
+
+ <div class="contact-info">
+  <a href="mailto:vimel201801@gmail.com" target="_blank" rel="noopener noreferrer">📧 vimel201801@gmail.com</a>
+  <a href="" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/mariavitoriadev</a>
+  <a href="https://github.com/VitoriaMaced" target="_blank" rel="noopener noreferrer">🐙 github.com/maria-vitoria-devfront</a>
+</div>
+
+  <div class="container">
+    <section>
+      <h2>Projetos em Destaque</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="project-card">
+            <h3>Protótipo de Quiz Educacional</h3>
+            <p>Com perguntas desafiadoras e temas focados na programação, você vai se divertir enquanto expande seu aprendizado.</p>
+            <a href="https://www.figma.com/proto/NZDrkIPaSmttj65jfl3r9F/quiz?node-id=5-68&starting-point-node-id=5%3A68" class="btn" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+          <div class="project-card">
+            <h3>Vrum</h3>
+            <p>Chegou o Vrum! Seu novo app de mobilidade urbana!</p>
+            <a href="https://www.figma.com/design/UENxOevI1u693gDkstnvs2/VrumApp?t=2Hp4hxxfdd5iPffm-0" class="btn" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+          <div class="project-card">
+            <h3>DiscLux</h3>
+            <p>Encontre a companhia ideal para cada momento</p>
+            <a href="https://www.figma.com/proto/uD5mqGLKL2tUCj4bFDSGcv/DISCLUX?node-id=25-22&starting-point-node-id=25%3A22" class="btn" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+          <div class="project-card">
+            <h3>Sistema de Gestão de Tarefas</h3>
+            <p>App web com JavaScript e localStorage para produtividade pessoal.</p>
+            <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+          </div>
+          <div class="project-card">
+            <h3>Protótipo de App de Saúde Feminina</h3>
+            <p>Design no Figma voltado ao bem-estar da mulher.</p>
+            <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Ver Protótipo</a>
+          </div>
+        </div>
+        <div class="carousel-indicators" data-carousel="projects">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certificações</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="certification-card">
+            <h3>Designer UX|UX - Google</h3>
+            <p>01/2023</p>
+          </div>
+          <div class="certification-card">
+            <h3>Programação orientada a objetos com Java - DIO</h3>
+            <p>08/2023</p>
+          </div>
+          <div class="certification-card">
+            <h3> Introdução a Criação de Websites com HTML5 e CSS3 - DIO</h3>
+            <p>06/2022</p>
+          </div>
+          <div class="certification-card">
+            <h3>Mikrotik - Redes Brasil</h3>
+            <p>01/2022</p>
+          </div>
+        </div>
+        <div class="carousel-indicators" data-carousel="certificacoes">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experiências</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="certification-card">
+            <h3>Designer UI/UX</h3>
+            <p>Empresa Alto tech - 04/2023</p>
+            <p>Criação e manutenção de interfaces web responsivas com HTML, CSS, JavaScript, React e Angular.</p>
+          </div>
+          <div class="certification-card">
+            <h3>Desenvolvedora Front end</h3>
+            <p>Empresa Alto tech - 03/2022</p>
+            <p>Criação de interfaces com foco em UX, acessibilidade e testes de usabilidade.</p>
+          </div>
+          <div class="certification-card">
+            <h3>Analista de requisitos</h3>
+            <p>Mulheres na computador - 06/2020</p>
+            <p>Analista de Requisitos em projeto na UFERSA, com foco em levantamento de necessidades, prototipação e melhoria da experiência do usuário.</p>
+          </div>
+        </div>
+        <div class="carousel-indicators" data-carousel="certificacoes">
+          <button class="active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Portfólio Online</h2>
+      <p>Versão digital deste portfólio disponível em: <a href="https://github.com/maria-vitoria-devfront/portfolio" target="_blank" rel="noopener noreferrer">github.com/maria-vitoria-devfront/portfolio</a></p>
+    </section>
+  </div>
+  <script>
+    document.querySelectorAll('[data-carousel]').forEach(carousel => {
+      const track = carousel.previousElementSibling;
+      const buttons = carousel.querySelectorAll('button');
+      let currentIndex = 0;
+
+      function updateCarousel(index) {
+        const cardWidth = track.children[0].offsetWidth + 24;
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+        buttons.forEach(btn => btn.classList.remove('active'));
+        buttons[index].classList.add('active');
+      }
+
+      buttons.forEach((button, i) => {
+        button.addEventListener('click', () => {
+          currentIndex = i;
+          updateCarousel(currentIndex);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
